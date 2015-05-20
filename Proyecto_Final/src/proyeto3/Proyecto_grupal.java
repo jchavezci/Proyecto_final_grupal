@@ -10,7 +10,7 @@ los datos.
 
 Integrantes:
 
-Juan Chavez
+Juan Chávez
 Luis Alarcon
 Mauricio Campos
 Pablo Mella
