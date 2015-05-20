@@ -65,9 +65,9 @@ public class Proyeto3 {
     if(letra == 'S'){
     
     System.out.println();
-    sc.nextLine();                             //Me Costo Harto Averiguar poe que no funcionada el sc.NextLine()
+    sc.nextLine();                             //Se nos hizo dificil averiguar por que no funcionaba el sc.NextLine()
                                                //y buscando en internet, era porque tenia que limpiar el Buffer
-                                               // y lo limpie agregando sc.next(); 
+                                               // y lo limpiamos agregando sc.next(); 
     
     System.out.print("Ingrese el nombre del Residente: ");  //Ingresamos el nombre del Residente
     nombre = sc.nextLine();         
@@ -173,7 +173,7 @@ public class Proyeto3 {
         System.out.println();
     }
     
-    if(letra != 'N' && letra !='S'){  //Condicion ¿que pasa si no elegio No (N) o Si (S)?
+    if(letra != 'N' && letra !='S'){  //Condición ¿que pasa si no elegio No (N) o Si (S)?
         System.out.println();
         System.out.println("Digito no Valido");
         System.out.println();
@@ -181,7 +181,7 @@ public class Proyeto3 {
         
     
   
-    } while (letra != 'S' || letra != 'N'); //Estructura de Do-While mientras se cumpla la condiion
+    } while (letra != 'S' || letra != 'N'); //Estructura de Do-While mientras se cumpla la condición
     }
     }       
     
