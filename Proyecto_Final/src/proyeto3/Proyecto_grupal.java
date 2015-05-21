@@ -89,7 +89,7 @@ public class Proyeto3 {
         
         case 1 : do {          // Usamos una Estrucutura Do-While para la primera opción
                 
-                System.out.print("Costo de Jardín mes "+contador_jardin+" :");   
+                System.out.print("Costo de Jardin mes "+contador_jardin+" :");   
                 jardin = sc.nextDouble();
                 
                 suma_jardin = suma_jardin + jardin;
@@ -102,7 +102,7 @@ public class Proyeto3 {
         
         case 2 : for(int n = 1; n < 4; n++ ){     // Usamos una Estrucutra For para la Segunda opción
                 
-                System.out.print("Costo de Mantención mes "+n +" :");    
+                System.out.print("Costo de Mantencion mes "+n +" :");    
                 mantencion = sc.nextDouble();
                 
                 suma_mantencion = suma_mantencion + mantencion;
