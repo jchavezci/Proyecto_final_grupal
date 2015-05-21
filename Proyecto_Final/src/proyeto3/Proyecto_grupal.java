@@ -11,7 +11,7 @@ los datos.
 Integrantes:
 
 Juan Chávez
-Luis Alarcon
+Luis Alarcón
 Mauricio Campos
 Pablo Mella
 
@@ -37,11 +37,11 @@ public class Proyeto3 {
         // TODO code application logic here
     Scanner sc = new Scanner(System.in);
     
-    double suma_jardin = 0;        //Iniciamos los Acumuladores a Usar
+    double suma_jardin = 0;        //Iniciamos los acumuladores a usar
     double suma_mantencion = 0;
     double suma_seguridad = 0;
     
-    double jardin;               //Generando Variables
+    double jardin;               //Generando variables
     double mantencion;
     double seguridad;
     char letra;
@@ -49,24 +49,24 @@ public class Proyeto3 {
     
     int opcion = 0;
     
-                                      // Inicializamos los Contadores a Utilizar
+                                      // Inicializamos los contadores a utilizar
     int contador_jardin = 1;
     int contador_seguridad = 1;
     int contador_default = 0;
                         
-    do{                     //Generamo un Do-While para mantener el menu
+    do{                     //Generamos un Do-While para mantener el menú
     
     System.out.println();
-    System.out.println("Quiere Generar gastos Comunes (3 Meses)"); //Aca ingresamos si el usurio quiere usar el pragama
-                                                                   //  O sea S SI o N NO             
+    System.out.println("Quiere Generar gastos Comunes (3 Meses)"); //Acá ingresamos si el usuario quiere usar el programa
+                                                                   //  O sea "S" SI o "N" NO             
     System.out.print("Ingrese si (S) o no (N): ");
     letra = sc.next().charAt(0);
       
     if(letra == 'S'){
     
     System.out.println();
-    sc.nextLine();                             //Se nos hizo dificil averiguar por que no funcionaba el sc.NextLine()
-                                               //y buscando en internet, era porque teniamos que limpiar el Buffer
+    sc.nextLine();                             //Se nos hizo difícil averiguar por que no funcionaba el sc.NextLine()
+                                               //y buscando en internet, era porque teníamos que limpiar el Buffer
                                                // y lo limpiamos agregando sc.nextLine(); 
     
     System.out.print("Ingrese el nombre del Residente: ");  //Ingresamos el nombre del Residente
@@ -76,7 +76,7 @@ public class Proyeto3 {
     
     
 
-    System.out.println("Elija suma de 3 meses de gastos comunes: "); // Menu de opciones de la estructura CASE
+    System.out.println("Elija suma de 3 meses de gastos comunes: "); // Menú de opciones de la estructura CASE
     System.out.println("1 = Jardin 3 meses ");
     System.out.println("2 = Mantencion 3 meses ");
     System.out.println("3 = Seguridad 3 meses ");
@@ -87,7 +87,7 @@ public class Proyeto3 {
     
         switch (opcion){      //Inicia la estructura CASE
         
-        case 1 : do {          // Usamos una Estrucutura Do-While para la primera Opcion
+        case 1 : do {          // Usamos una Estrucutura Do-While para la primera opción
                 
                 System.out.print("Costo de Jardín mes "+contador_jardin+" :");   
                 jardin = sc.nextDouble();
@@ -100,7 +100,7 @@ public class Proyeto3 {
                               
         
         
-        case 2 : for(int n = 1; n < 4; n++ ){     // Usamos una Estrucutra For para la Segunda Opcion
+        case 2 : for(int n = 1; n < 4; n++ ){     // Usamos una Estrucutra For para la Segunda opción
                 
                 System.out.print("Costo de Mantención mes "+n +" :");    
                 mantencion = sc.nextDouble();
@@ -111,7 +111,7 @@ public class Proyeto3 {
         
             
                 
-        case 3 : while(contador_seguridad < 4){     // Usamos una Estrucutura While para la 3era Opcion
+        case 3 : while(contador_seguridad < 4){     // Usamos una Estrucutura While para la 3era opción
                  
                  System.out.print("Costos de Seguridad mes: "+contador_seguridad+" :");    
                  seguridad = sc.nextDouble();
@@ -124,7 +124,7 @@ public class Proyeto3 {
         break;
        
           
-        case 4 :{                                   // La 4ta opcion del CASE es para Resetear los Valores
+        case 4 :{                                   // La 4ta opción del CASE es para resetear los valores
             suma_jardin = 0;                       // Acumuladores y Contadores
             suma_mantencion = 0;
             suma_seguridad = 0;
@@ -145,18 +145,18 @@ public class Proyeto3 {
         }
         
         if (contador_default == 0 ){ 
-        System.out.println();                 //  Generamos los Datos de Salida a modo de Informe
+        System.out.println();                 //  Generamos los datos de salida a modo de informe
         System.out.println("La Boletea semestral es: ");
         System.out.println();
         System.out.println("Sr. Recidente: "+nombre);
         System.out.println("Costos Jardin: "+suma_jardin);
-        System.out.println("Costos Mantención: "+suma_mantencion); 
+        System.out.println("Costos Mantencion: "+suma_mantencion); 
         System.out.println("Costos Seguridad: "+suma_seguridad);
         System.out.println();
         
         contador_default = 0; 
-        suma_jardin = 0;                       // Resteamos Acumuladores y Contadores para
-        suma_mantencion = 0;                   // Reutilizar el programa
+        suma_jardin = 0;                       // Reseteamos acumuladores y contadores para
+        suma_mantencion = 0;                   // reutilizar el programa
         suma_seguridad = 0;
             
         contador_jardin = 1;
@@ -167,13 +167,13 @@ public class Proyeto3 {
         }
     
     }
-    if (letra == 'N'){     //Condición que pasa si el usurio Eligio NO
+    if (letra == 'N'){     //Condición que pasa si el usurio eligió "NO"
         System.out.println();
         System.out.println("Gracias por Operar con Nosotros");
         System.out.println();
     }
     
-    if(letra != 'N' && letra !='S'){  //Condición ¿que pasa si no elegio No (N) o Si (S)?
+    if(letra != 'N' && letra !='S'){  //Condición ¿que pasa si no elegió "No" (N) o "Si" (S)?
         System.out.println();
         System.out.println("Digito no Valido");
         System.out.println();
