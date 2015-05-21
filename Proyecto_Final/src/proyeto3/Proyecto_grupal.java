@@ -66,8 +66,8 @@ public class Proyeto3 {
     
     System.out.println();
     sc.nextLine();                             //Se nos hizo dificil averiguar por que no funcionaba el sc.NextLine()
-                                               //y buscando en internet, era porque tenia que limpiar el Buffer
-                                               // y lo limpiamos agregando sc.next(); 
+                                               //y buscando en internet, era porque teniamos que limpiar el Buffer
+                                               // y lo limpiamos agregando sc.nextLine(); 
     
     System.out.print("Ingrese el nombre del Residente: ");  //Ingresamos el nombre del Residente
     nombre = sc.nextLine();         
@@ -137,8 +137,8 @@ public class Proyeto3 {
         break;
         }
         default : {
-            System.out.println();
-            System.out.println("Digito no Valido");
+            System.out.println();                     // Dejamos lo que pasaría si escribimos
+            System.out.println("Digito no Valido");   // Mal una opción de la estrucutura CASE
             contador_default = 1;
         break;
         }
@@ -167,7 +167,7 @@ public class Proyeto3 {
         }
     
     }
-    if (letra == 'N'){     //Condicion que pasa si el usurio Eligio NO
+    if (letra == 'N'){     //Condición que pasa si el usurio Eligio NO
         System.out.println();
         System.out.println("Gracias por Operar con Nosotros");
         System.out.println();
